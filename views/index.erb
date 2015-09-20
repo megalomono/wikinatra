@@ -1,0 +1,9 @@
+<%= erb :_header %>
+<ul>
+<% @articles.each do |article| %>
+    <li>
+        <a href='/<%= article %>'><%= article.gsub('_', ' ').capitalize %></a>
+    </li>
+<% end %>
+</ul>
+<%= erb :_footer %>
